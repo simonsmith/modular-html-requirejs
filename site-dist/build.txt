@@ -15,12 +15,14 @@ scripts/components/handlebars/handlebars.js
 scripts/components/requirejs-domready/domReady.js
 scripts/core.js
 
-scripts/modules/carousel.js
+scripts/page/carousel.js
 ----------------
+scripts/page/carousel.js
 scripts/plugins/jquery.pluginA.js
 scripts/plugins/jquery.pluginB.js
-scripts/modules/carousel.js
+scripts/modules/Carousel.js
 
-scripts/modules/navigation.js
+scripts/page/nav.js
 ----------------
-scripts/modules/navigation.js
+scripts/page/nav.js
+scripts/modules/Navigation.js

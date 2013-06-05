@@ -13,8 +13,7 @@
         <script src="scripts/require-config.js"></script>
 
         <!--
-            Because the config is in a separate file we can't use data-main
-            Start loading core as soon as we can
+            Because the config is in a separate file we can't use data-main.
         -->
         <script>
             require(['core']);
@@ -26,25 +25,13 @@
         <nav class="nav" id="nav">
             <h2>Navigation modules</h2>
         </nav>
-        <script>
-            // Wait for core to load before requiring the modules for the nav HTML component
-            require(['core'], function() {
-                require(['jquery', 'modules/navigation'], function($, Navigation) {
-                    new Navigation($('#nav'));
-                });
-            });
-        </script>
+        <script>require(['page/nav']);</script>
         
          <div class="carousel">
              <h2>Carousel module</h2>
          </div>
-        <script>
-            require(['core'], function() {
-                require(['jquery', 'modules/carousel'], function($, Carousel) {
-                    new Carousel($('.carousel'));
-                });
-            });
-        </script>
+        <script>require(['page/carousel']);</script>
 
     </body>
 </html>
+
