@@ -1,0 +1,6 @@
+@import "normalize.css";
+
+body {
+    margin: 30px auto;
+    width: 600px;
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/site.css">
+
+        <!--
+            Load require and require.config() separately so that
+            the config can be re-used with the build tool
+        -->
+        <script src="scripts/components/requirejs/require.js"></script>
+        <script src="scripts/require-config.js"></script>
+
+        <!--
+            Because the config is in a separate file we can't use data-main.
+        -->
+        <script>
+            require(['core']);
+        </script>
+    </head>
+    <body>
+        <h1>Test site</h1>
+
+        <nav class="nav" id="nav">
+            <h2>Navigation modules</h2>
+        </nav>
+        <script>
+            // Wait for core to load before requiring the modules for the nav HTML component
+            require(['core'], function() {
+                require(['jquery', 'modules/navigation'], function($, Navigation) {
+                    new Navigation($('#nav'));
+                });
+            });
+        </script>
+        
+         <div class="carousel">
+             <h2>Carousel module</h2>
+         </div>
+        <script>
+            require(['core'], function() {
+                require(['jquery', 'modules/carousel'], function($, Carousel) {
+                    new Carousel($('.carousel'));
+                });
+            });
+        </script>
+
+    </body>
+</html>
+
+
+<div class="col-lg-4">
+    <div class="user user-admin">
+        <h2 class="user-title">A user</h2>
+        <p class="user-detail">Lorem ipsum</p>
+        <img class="user-icon" src="icon.png" alt="">
+    </div>
+</div>
+
