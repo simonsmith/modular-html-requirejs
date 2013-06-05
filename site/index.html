@@ -13,19 +13,20 @@
         <script src="scripts/require-config.js"></script>
 
         <!--
-            Because the config is in a separate file we can't use data-main.
+            Because the config is in a separate file we can't easily use data-main.
+            Begin loading core as soon as possible
         -->
-        <script>
-            require(['core']);
-        </script>
+        <script>require(['core']);</script>
     </head>
     <body>
+
         <h1>Test site</h1>
 
         <nav class="nav" id="nav">
             <h2>Navigation modules</h2>
         </nav>
         <script>require(['page/nav']);</script>
+
         
          <div class="carousel">
              <h2>Carousel module</h2>
