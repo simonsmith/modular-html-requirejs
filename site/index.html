@@ -4,19 +4,7 @@
         <title></title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/site.css">
-
-        <!--
-            Load require and require.config() separately so that
-            the config can be re-used with the build tool
-        -->
-        <script src="scripts/components/requirejs/require.js"></script>
-        <script src="scripts/require-config.js"></script>
-
-        <!--
-            Because the config is in a separate file we can't easily use data-main.
-            Begin loading core as soon as possible
-        -->
-        <script>require(['core']);</script>
+        <script src="scripts/components/requirejs/require.js" data-main="scripts/main"></script>
     </head>
     <body>
 

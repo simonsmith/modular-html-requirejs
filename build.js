@@ -1,7 +1,7 @@
 ({
     appDir: 'site',
     baseUrl: 'scripts',
-    mainConfigFile: 'site/scripts/require-config.js',
+    mainConfigFile: 'site/scripts/main.js',
     dir: 'site-dist',
     removeCombined: true,
     optimize: 'uglify2',
@@ -9,17 +9,17 @@
 
     modules: [
         {
-            name: 'core'
+            name: 'main'
         },
         {
             name: 'page/carousel',
             include: ['modules/Carousel'],
-            exclude: ['core']
+            exclude: ['main']
         },
         {
             name: 'page/nav',
             include: ['modules/Navigation'],
-            exclude: ['core']
+            exclude: ['main']
         }
     ],
 })

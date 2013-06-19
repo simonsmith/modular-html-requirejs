@@ -8,12 +8,12 @@ css/site.css
 css/normalize.css
 css/site.css
 
-scripts/core.js
+scripts/main.js
 ----------------
 scripts/components/jquery/jquery.js
 scripts/components/handlebars/handlebars.js
 scripts/components/requirejs-domready/domReady.js
-scripts/core.js
+scripts/main.js
 
 scripts/page/carousel.js
 ----------------
