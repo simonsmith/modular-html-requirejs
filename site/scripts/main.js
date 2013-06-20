@@ -17,7 +17,7 @@ require.config({
 
 
 // Main libs - Libraries and modules that will be needed on all pages of the site
-define(['jquery', 'handlebars', 'domready'], function() {});
+define(['jquery', 'handlebars', 'domready'], function() { });
 
 
 // If you'd like to load some core modules that interact with the page then you can
@@ -26,10 +26,12 @@ define(['jquery', 'handlebars', 'domready'], function() {});
 define(function(require) {
     var $        = require('jquery');
     var domReady = require('domready');
+    var Nav      = require('modules/Navigation')
                    require('handlebars');
     
     domReady(function() {
         // Init common module code here
+        new Nav($('#nav'));
     });
 });
 */
