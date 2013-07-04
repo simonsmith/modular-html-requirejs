@@ -17,7 +17,7 @@ require.config({
 
 
 // Main libs - Libraries and modules that will be needed on all pages of the site
-define(['jquery', 'handlebars', 'domready'], function() { });
+require(['jquery', 'handlebars', 'domready'], function() { });
 
 
 // If you'd like to load some core modules that interact with the page then you can
