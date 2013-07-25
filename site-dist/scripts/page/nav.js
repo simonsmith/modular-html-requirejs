@@ -1,1 +1,1 @@
-require(["main"],function(){require(["jquery","modules/Navigation"],function(e,t){new t(e("#nav"))})}),define("page/nav",function(){}),define("modules/Navigation",["require","jquery"],function(e){e("jquery");var t=function(e){e.append("Nav module loaded!")};return t.prototype={},t});
+define("modules/Navigation",["require","jquery"],function(e){e("jquery");var t=function(e){e.append("Nav module loaded!")};return t.prototype={},t}),require(["main"],function(){require(["jquery","modules/Navigation"],function(e,t){new t(e("#nav"))})}),define("page/nav",function(){});

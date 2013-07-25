@@ -17,12 +17,12 @@ scripts/main.js
 
 scripts/page/carousel.js
 ----------------
-scripts/page/carousel.js
 scripts/plugins/jquery.pluginA.js
 scripts/plugins/jquery.pluginB.js
 scripts/modules/Carousel.js
+scripts/page/carousel.js
 
 scripts/page/nav.js
 ----------------
-scripts/page/nav.js
 scripts/modules/Navigation.js
+scripts/page/nav.js
